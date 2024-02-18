@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1A1E1E"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <LinearLayout
+          android:id="@+id/LL1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="4dp"
+          android:layout_marginTop="4dp"
+          android:orientation="vertical"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+          <TextView
+              android:id="@+id/titleTv"
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ellipsize="end"
+              android:fontFamily="sans-serif-medium"
+              android:maxLines="2"
+              android:padding="4dp"
+              android:text="I-Phone"
+              android:textColor="@color/white"
+              android:textSize="32sp"
+              android:textStyle="bold" />
+
+
+          <TextView
+              android:id="@+id/descriptionTv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="2dp"
+              android:ellipsize="end"
+              android:fontFamily="sans-serif-medium"
+              android:padding="4dp"
+              android:text="This is my main heading, which will contain the title of the news."
+              android:textColor="@color/white"
+              android:textSize="16sp" />
+
+          <ImageView
+              android:id="@+id/productImage"
+              android:layout_margin="8dp"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:scaleType="fitXY"
+              android:src="@drawable/ic_launcher_background" />
+
+          <LinearLayout
+              android:id="@+id/L2"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_margin="4dp"
+              android:orientation="horizontal"
+              android:background="#1A1E1E"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/productImage">
+
+<!--              <TextView-->
+
+<!--                  android:layout_width="wrap_content"-->
+<!--                  android:layout_height="40dp"-->
+<!--                  android:layout_marginStart="20dp"-->
+<!--                  android:layout_marginTop="2dp"-->
+<!--                  android:ellipsize="end"-->
+<!--                  android:fontFamily="sans-serif-medium"-->
+<!--                  android:maxLines="1"-->
+<!--                  android:padding="4dp"-->
+<!--                  android:text="70000"-->
+<!--                  android:textColor="@color/white"-->
+<!--                  android:textSize="24sp"-->
+<!--                  android:textStyle="bold" />-->
+
+<!--              <View-->
+<!--                  android:layout_width="150dp"-->
+<!--                  android:layout_height="40dp"-->
+<!--                  android:background="#1A1E1E"-->
+<!--                  android:layout_margin="2dp" />-->
+
+
+<!--              <TextView-->
+
+<!--                  android:layout_width="match_parent"-->
+<!--                  android:layout_height="40dp"-->
+<!--                  android:layout_marginTop="2dp"-->
+<!--                  android:layout_marginEnd="20dp"-->
+<!--                  android:ellipsize="end"-->
+<!--                  android:fontFamily="sans-serif-medium"-->
+<!--                  android:maxLines="1"-->
+<!--                  android:padding="4dp"-->
+
+<!--                  android:textColor="@color/white"-->
+<!--                  android:textSize="16sp" />-->
+
+          </LinearLayout>
+
+
+<!--          <LinearLayout-->
+<!--              android:id="@+id/LL3"-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="40dp"-->
+<!--              android:layout_margin="4dp"-->
+<!--              android:background="#1A1E1E"-->
+<!--              android:orientation="vertical"-->
+<!--              app:layout_constraintStart_toStartOf="parent"-->
+<!--              app:layout_constraintTop_toBottomOf="@id/productImage">-->
+
+              <TextView
+                  android:id="@+id/BrandTv"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginTop="2dp"
+                  android:fontFamily="sans-serif-medium"
+                  android:padding="4dp"
+                  android:text="Apple"
+                  android:textColor="@color/white"
+                  android:textSize="24sp"
+                  android:textStyle="bold" />
+
+<!--              <View-->
+<!--                  android:layout_width="150dp"-->
+<!--                  android:layout_height="40dp"-->
+<!--                  android:layout_margin="2dp" />-->
+
+
+              <TextView
+                  android:id="@+id/categoryTv"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="2dp"
+                  android:layout_marginStart="20dp"
+                  android:ellipsize="end"
+                  android:fontFamily="sans-serif-medium"
+                  android:maxLines="1"
+                  android:padding="4dp"
+                  android:text="Phone."
+                  android:textColor="@color/white"
+                  android:textSize="16sp" />
+
+<!--          </LinearLayout>-->
+          <View
+              android:layout_width="wrap_content"
+              android:layout_height="1dp"
+              android:background="#F4F9F9"
+              android:layout_margin="2dp" />
+<!--          <LinearLayout-->
+<!--              android:id="@+id/LL4"-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="40dp"-->
+<!--              android:layout_margin="4dp"-->
+<!--              android:orientation="horizontal"-->
+<!--              app:layout_constraintBottom_toTopOf="@id/LL3"-->
+
+<!--              app:layout_constraintStart_toStartOf="parent">-->
+
+              <TextView
+                  android:id="@+id/price"
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginTop="2dp"
+                  android:ellipsize="end"
+                  android:fontFamily="sans-serif-medium"
+                  android:maxLines="1"
+                  android:padding="4dp"
+                  android:text="50000"
+                  android:textColor="@color/white"
+                  android:textSize="24sp"
+                  android:textStyle="bold" />
+
+
+
+              <TextView
+                  android:id="@+id/discount"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="2dp"
+                  android:layout_marginStart="20dp"
+                  android:ellipsize="end"
+                  android:fontFamily="sans-serif-medium"
+                  android:maxLines="1"
+                  android:padding="4dp"
+                  android:text=" 20%"
+                  android:textColor="@color/white"
+                  android:textSize="16sp" />
+
+          <TextView
+              android:id="@+id/rating"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="2dp"
+              android:layout_marginStart="20dp"
+              android:ellipsize="end"
+              android:fontFamily="sans-serif-medium"
+              android:maxLines="1"
+              android:padding="4dp"
+              android:text="Phone."
+              android:textColor="@color/white"
+              android:textSize="16sp" />
+
+          <TextView
+              android:id="@+id/stock"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="2dp"
+              android:layout_marginStart="20dp"
+              android:ellipsize="end"
+              android:fontFamily="sans-serif-medium"
+              android:maxLines="1"
+              android:padding="4dp"
+              android:text="Phone."
+              android:textColor="@color/white"
+              android:textSize="16sp" />
+
+<!--          </LinearLayout>-->
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/rvImages"
+              android:layout_margin="16dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="false"
+              android:paddingBottom="50dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.5"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+
+      </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
